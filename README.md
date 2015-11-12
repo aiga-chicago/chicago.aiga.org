@@ -1,3 +1,3 @@
 # chicago.aiga.org
 
-The home for AIGA Chicago. Hi Nick!
+The home for AIGA Chicago. Hi Mig!
