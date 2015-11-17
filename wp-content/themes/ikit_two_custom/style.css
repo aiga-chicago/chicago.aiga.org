@@ -1,0 +1,107 @@
+/*
+Theme Name: iKit Two Custom
+Theme URI: http://aiga.org
+Description: This is a child theme that extends the iKit Two theme, it can be customized without affecting the base theme.
+Author: AIGA
+Author URI: http://aiga.org/
+Version: 1.0.0
+Template: ikit_two
+*/
+
+.widget_text .widget-content {
+padding: 0px;
+}
+
+/* EVENT PAGE TITLES - REMOVE GRADIENT AND TEXT */
+.single-ikit_event .page-header-4-overlay {
+visibility: hidden;
+}
+
+.single-ikit_event .page-header-4-title-container {
+visibility: hidden;
+}
+
+/* META SLIDER STYLES */
+.metaslider {
+float: right;
+padding: 0 0 24px 36px;
+}
+
+.wp-editor ol, .wp-editor ul {
+margin-left: 0 !important;
+position: relative;
+top: 1em !important;
+}
+
+.metaslider .caption {
+font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+font-style: normal;
+font-weight: 500 !important;
+font-size: 14px;
+line-height: 20px;
+}
+
+.breakpoint-body-size-s .metaslider {
+padding: 0;
+}
+
+/* HEADING STYLES */
+h3 {
+font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+font-style: normal;
+font-weight: 700 !important;
+}
+
+/* POST TEXT STYLING */
+.small-bold, h3 {
+font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+}
+
+.big-bold {
+font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+}
+
+.big-bold-italic {
+font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+font-style: italic;
+font-weight: 700;
+font-size: 32px;
+}
+
+/* LIST STYLE FOR POSTS */
+.page-layout-body-paragraph-text li {
+list-style: circle;
+margin-left: 1em;
+margin-bottom: 1em;
+}
+
+/* IFRAME SIZE AND NO SCROLL BARS */
+iframe.noScrolling {
+width: 760px;
+height: 500px;
+overflow: hidden;
+}
+
+/* HIDE SECOND AND THIRD LOCAL SPONSOR LOGO IN FOOTER SO ARTISAN DOESN'T SHOW 3X */
+.footer-local-sponsors .grid-item-inner ul li:nth-child(2) {
+display:none;
+}
+
+.footer-local-sponsors .grid-item-inner ul li:nth-child(3) {
+display:none;
+}
+
+@media all {
+#ajax-hook-event-attendees {
+visibility: visible;
+}
+}
+
+.layout {
+/*max-width: 1200p

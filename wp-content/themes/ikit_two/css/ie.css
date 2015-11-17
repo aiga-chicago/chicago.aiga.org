@@ -1,0 +1,24 @@
+body .css-loader,
+body .layout .css-loader {
+    border:0;
+}
+
+body .css-loader-fallback,
+body .layout .css-loader-fallback {
+    display:inline-block;
+}
+
+#page-loader-indicator.css-loader {
+    border:0;
+}
+
+.infinity-fetcher-fetch-button .css-loader {
+    height:40px;
+    position:static;
+    border:0;
+    width:100%;
+}
+
+.single-ikit_event #ajax-hook-event-attendees .attendees-loading .css-loader {
+    border:0;
+}

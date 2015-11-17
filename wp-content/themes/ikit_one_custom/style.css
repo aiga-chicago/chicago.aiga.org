@@ -1,0 +1,18 @@
+/*
+Theme Name: Internet Kit One Custom
+Theme URI: http://aiga.org
+Description: This is a child theme that extends the Internet Kit One theme, it can be customized without affecting the base theme.
+Author: AIGA
+Author URI: http://aiga.org/
+Version: 1.0.0
+Template: ikit_one
+*/
+
+@import url("../ikit_one/style.css");
+
+/* media query for AIGA chicago poster show iFrame containing google form */
+@media (max-width: 700px) {
+    #MBGoogleForm {
+      height: 1000px;
+    }
+}

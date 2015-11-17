@@ -1,0 +1,459 @@
+@import 'mixins';
+@import 'placeholders';
+
+/*********************************************/
+/* Template section toc
+/*********************************************/
+
+.page-template-section_toc-php .item-title {
+    @extend .link-style-3;
+    @extend .font-color-20;
+    @extend .font-size-14;
+}
+
+.page-template-section_toc-php .item-description {
+    @extend .font-style-8;
+    @extend .font-color-18;
+    @extend .font-size-17;
+}
+
+.page-template-section_toc-php .item-external-link {
+    @extend .font-style-2;
+    @extend .font-size-19;
+    @extend .link-style-7;
+}
+
+.page-template-section_toc-php .breakpoint-body-size-s .section-grid .grid-item {
+    @extend .border-color-2;
+}
+
+/*********************************************/
+/* Template persons
+/*********************************************/
+
+.page-template-persons-php .person-item-title {
+    @extend .font-size-14;
+    @extend .font-color-20;
+    @extend .link-style-3;
+}
+
+.page-template-persons-php .person-item-positions {
+    @extend .font-color-18;
+    @extend .font-size-17;
+    @extend .font-style-2;
+}
+
+/*********************************************/
+/* Template persons alt 1
+/*********************************************/
+
+.page-template-persons_alt_1-php .person-item-title {
+    @extend .font-size-14;
+    @extend .font-color-20;
+    @extend .link-style-3;
+}
+
+.page-template-persons_alt_1-php .person-item-positions {
+    @extend .font-color-18;
+    @extend .font-size-17;
+    @extend .font-style-2;
+}
+
+.page-template-persons_alt_1-php .person-item-description {
+    @extend .font-style-8;
+    @extend .font-color-18;
+    @extend .font-size-17;
+}
+
+/*********************************************/
+/* Template single person
+/*********************************************/
+
+.single-ikit_person .person-positions {
+    @extend .font-style-10;
+}
+
+/*********************************************/
+/* Template single job
+/*********************************************/
+
+.single-ikit_job .apply-button {
+    @extend .background-color-13;
+}
+
+/*********************************************/
+/* Template category
+/*********************************************/
+.category .header-category-name {
+    @extend .font-style-4;
+}
+
+/*********************************************/
+/* Template events past
+/*********************************************/
+
+.page-template-events_past-php .event-item-title {
+    @extend .font-size-14;
+    @extend .font-color-20;
+    @extend .link-style-3;
+}
+
+.page-template-events_past-php .event-item-attributes {
+    @extend .font-style-2;
+    @extend .font-size-19;
+}
+
+.page-template-events_past-php .event-item-location {
+    @extend .font-color-13;
+    @extend .font-style-3;
+}
+
+.page-template-events_past-php .event-item-date {
+    @extend .font-color-18;
+}
+
+.page-template-events_past-php .event-item-external-source,
+.page-template-events_past-php .event-item-internal-source {
+    @extend .font-color-13;
+    @extend .font-style-6;
+}
+
+/*********************************************/
+/* Template news
+/*********************************************/
+
+.category .layout .page-layout-4-body .news-item-featured .news-item-title,
+.page-template-news-php .layout .page-layout-4-body .news-item-featured .news-item-title {
+    @extend .font-size-12;
+}
+
+.category .page-layout-4-body .news-item-title,
+.page-template-news-php .page-layout-4-body .news-item-title {
+    @extend .font-size-14;
+    @extend .font-color-20;
+    @extend .link-style-3;
+}
+
+.category .page-layout-4-body .news-item-categories,
+.page-template-news-php .page-layout-4-body .news-item-categories {
+    @extend .font-style-3;
+    @extend .link-style-3;
+}
+
+.category .page-layout-4-body .news-item-attributes,
+.page-template-news-php .page-layout-4-body .news-item-attributes {
+    @extend .font-size-19;
+    @extend .font-style-2;
+}
+
+.category .page-layout-4-body .news-item-categories,
+.category .page-layout-4-body .news-item-date,
+.page-template-news-php .page-layout-4-body .news-item-categories,
+.page-template-news-php .page-layout-4-body .news-item-date {
+    @extend .font-color-18;
+}
+
+.category .page-layout-4-body .news-item-author,
+.page-template-news-php .page-layout-4-body .news-item-author {
+    @extend .font-size-17;
+    @extend .font-color-20;
+}
+
+.category .page-layout-4-body .news-item-description,
+.page-template-news-php .page-layout-4-body .news-item-description {
+    @extend .font-style-8;
+    @extend .font-color-18;
+    @extend .font-size-17;
+}
+
+.category .page-layout-4-body .news-item-external-source,
+.page-template-news-php .page-layout-4-body .news-item-external-source {
+    @extend .font-color-13;
+    @extend .font-style-6;
+}
+
+/*********************************************/
+/* Template events
+/*********************************************/
+
+.page-template-events-php .page-layout-4-body .event-item-title {
+    @extend .font-color-20;
+    @extend .font-size-14;
+    @extend .link-style-3;
+}
+
+.page-template-events-php .page-layout-4-body .event-item-description {
+    @extend .font-size-17;
+    @extend .font-color-18;
+    @extend .font-style-8;
+}
+
+.page-template-events-php .page-layout-4-body .event-item-attributes {
+    @extend .font-style-2;
+    @extend .font-size-19;
+}
+
+.page-template-events-php .page-layout-4-body .event-item-location {
+    @extend .font-color-13;
+    @extend .font-style-3;
+}
+
+.page-template-events-php .page-layout-4-body .event-item-date {
+    @extend .font-color-18;
+}
+
+.page-template-events-php .page-layout-4-body .event-item-external-source,
+.page-template-events-php .page-layout-4-body .event-item-internal-source {
+    @extend .font-color-13;
+    @extend .font-style-6;
+}
+
+.page-template-events-php .page-layout-4-body .event-item {
+    @extend .border-color-12;
+}
+
+/* Calendar */
+
+.page-template-events-php .events-calendar-day-event-empty,
+.page-template-events-php .events-calendar-day-event-image {
+    @extend .border-color-14;
+}
+
+.page-template-events-php .events-calendar-day-not-in-month .events-calendar-day-event-empty {
+    @extend .background-color-24;
+}
+
+.page-template-events-php .events-calendar-day-event-empty {
+    @extend .background-color-21;
+}
+
+.page-template-events-php .events-calendar-title {
+    @extend .font-size-14;
+    @extend .font-color-18;
+}
+
+.page-template-events-php .events-calendar-header {
+    @extend .border-color-12;
+}
+
+.page-template-events-php .events-calendar-content th,
+.page-template-events-php .events-calendar-content td {
+    @extend .font-size-14;
+    @extend .font-color-18;
+}
+
+.page-template-events-php .tooltipster-base {
+    @extend .background-color-22;
+}
+
+.page-template-events-php .events-calendar-day-event-info-title {
+    @extend .font-size-14;
+    @extend .font-color-2;
+}
+
+/*********************************************/
+/* Template search
+/*********************************************/
+
+.search .search-result-type {
+    @extend .font-size-19;
+    @extend .font-color-18;
+}
+
+.search .search-result-title {
+    @extend .font-color-20;
+    @extend .font-size-14;
+}
+
+.search .search-result-date {
+    @extend .font-color-18;
+    @extend .font-size-14;
+}
+
+/* Event */
+
+.search .search-result-event-internal {
+    @extend .font-color-16;
+    @extend .font-style-2;
+    @extend .font-style-3;
+}
+
+/*********************************************/
+/* Template jobs
+/*********************************************/
+
+.page-template-jobs-php .page-layout-4-body .job-item-location,
+.page-template-jobs-php .page-layout-4-body .job-item-date {
+    @extend .font-size-17;
+    @extend .font-color-18;
+    @extend .font-style-2;
+}
+
+.page-template-jobs-php .page-layout-4-body .job-item-title {
+    @extend .font-color-20;
+}
+
+.page-template-jobs-php .page-layout-4-body .job-item-company-name {
+    @extend .font-color-18;
+}
+
+.page-template-jobs-php .page-layout-4-body .job-item-company-name,
+.page-template-jobs-php .page-layout-4-body .job-item-title {
+    @extend .font-size-14;
+}
+
+/*********************************************/
+/* Template portfolios
+/*********************************************/
+
+.page-template-portfolios-php .portfolio-item-project {
+    @extend .font-color-18;
+    @extend .font-size-14;
+    @extend .link-style-3;
+}
+
+.page-template-portfolios-php .portfolio-item-author {
+    @extend .font-color-20;
+    @extend .font-size-14;
+    @extend .link-style-3;
+}
+
+/*********************************************/
+/* Template sponsors
+/*********************************************/
+
+.page-template-sponsors-php .sponsor-category {
+    @extend .font-style-3;
+    @extend .font-style-2;
+    @extend .font-size-19;
+    @extend .font-color-20;
+}
+
+.page-template-sponsors-php .sponsor-description {
+    @extend .font-color-20;
+    @extend .font-style-8;
+}
+
+/*********************************************/
+/* Template single event internal
+/*********************************************/
+
+.single-ikit_event_internal .event-link {
+    @extend .background-color-13;
+}
+
+/*********************************************/
+/* Template single event
+/*********************************************/
+
+.single-ikit_event .attendees .page-layout-4-sub-content-title,
+.single-ikit_event .attendees {
+    @extend .background-color-21;
+    @extend .font-color-18;
+}
+
+.single-ikit_event .eventbrite-member-registration-link {
+    @extend .background-color-13;
+}
+
+.single-ikit_event .eventbrite-non-member-registration-link {
+    @extend .background-color-21;
+}
+
+.single-ikit_event .etouches-registration-link {
+    @extend .background-color-13;
+}
+
+/*********************************************/
+/* Template membership rates
+/*********************************************/
+
+.page-template-membership_rates-php .rate-box-title {
+    @extend .font-style-3;
+    @extend .font-size-17;
+
+}
+
+.page-template-membership_rates-php .rate-box-price {
+    @extend .font-color-2;
+    @extend .font-style-3;
+    @extend .font-size-17;
+
+}
+
+.page-template-membership_rates-php .rate-box {
+    @extend .font-style-10;
+    @extend .font-color-2;
+    @extend .font-size-17;
+
+
+}
+
+.page-template-membership_rates-php .rate-box-contributing {
+    @extend .background-color-16;
+
+}
+
+.page-template-membership_rates-php .rate-box-supporting {
+    @extend .background-color-17;
+}
+
+.page-template-membership_rates-php .rate-box-sustaining {
+    @extend .background-color-18;
+}
+
+.page-template-membership_rates-php .rate-box-leader {
+    @extend .background-color-19;
+}
+
+.page-template-membership_rates-php .rate-box-trustee {
+    @extend .background-color-20;
+}
+
+.page-template-membership_rates-php .rate-box .box-button-container {
+    @extend .background-color-1;
+    @extend .color-2;
+}
+
+.page-template-membership_rates-php .rate-box .box-button-container:hover {
+    @extend .background-color-2;
+    @extend .color-1;
+}
+
+/*********************************************/
+/* Template member directory
+/*********************************************/
+
+.page-template-member_directory-php .member-item-name {
+    @extend .font-color-20;
+    @extend .font-size-14;
+    @extend .link-style-3;
+}
+
+.page-template-member_directory-php .member-item-company {
+    @extend .font-color-18;
+    @extend .font-size-14;
+    @extend .link-style-3;
+}
+
+.page-template-member_directory-php .member-item-attributes {
+    @extend .font-size-17;
+    @extend .font-style-2;
+    @extend .font-color-18;
+}
+
+.page-template-member_directory-php .member-item-attributes .member-item-type {
+    @extend .font-color-13;
+}
+
+/*********************************************/
+/* Template 404
+/*********************************************/
+.error404 .layout-content {
+    @extend .background-color-13;
+}
+
+.error404 .page-layout-4-body {
+    @extend .font-color-2;
+    @extend .font-size-12;
+}

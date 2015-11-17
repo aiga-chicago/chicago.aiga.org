@@ -1,0 +1,274 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Anti-spam"
+msgstr ""
+
+#. Short description.
+msgid "No spam in comments. No captcha."
+msgstr ""
+
+#. Found in description header.
+msgid "Useful:"
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>no captcha</strong>, because spam is not users' problem"
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>no moderation queues</strong>, because spam is not administrators' problem"
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>no settings page</strong>, because it is great to forget about spam completely and keep admin section clean"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://codecanyon.net/item/antispam-pro/6491169?ref=webvitaly\" title=\"Upgrade to Pro\">Anti-spam Pro - extended version with settings and manual spam protection</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://wordpress.org/plugins/security-protection/\" title=\"stops brute-force attacks\">Security-protection - blocks brute-force attacks</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://codecanyon.net/popular_item/by_category?category=wordpress&amp;ref=webvitaly\">WordPress Pro plugins</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Why humans should prove that they are humans by filling captchas? Lets bots prove that they are not bots with adding javascript to their user-agents!</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Anti-spam plugin blocks spam in comments automatically, invisibly for users and for admins."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Plugin is easy to use: just install it and it just works."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Plugin blocks spam only in comments section</strong>."
+msgstr ""
+
+#. Found in installation list item.
+msgid "install and activate the plugin on the Plugins page"
+msgstr ""
+
+#. Found in installation list item.
+msgid "enjoy life without spam in comments"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "dropped jQuery dependency (huge thanks to <a href=\"http://www.javiergutierrezchamorro.com/\" title=\"Javier Gutiérrez Chamorro\">Guti</a> for rewriting javascript code from scratch. Força Barça! )"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed issue with empty blocked spam counter (showing zero instead of nothing)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "removed function_exists check because each function has unique prefix"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "removed add_option()"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added autocomplete=\"off\" for inputs (thanks to Feriman)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added the ability to hide or show info block in the \"Screen Options\" section"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "refactor code structure"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added blocked spam counter in the comments section"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "clean up the docs"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added ANTISPAM_VERSION constant (thanks to jumbo)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "removed new spam-block algorithm because it is not needed"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "remove log notices"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added new spam-block algorithm"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "bugfixing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "enqueue script only for pages with comments form and in the footer (thanks to dougvdotcom)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "reverting to ver.2.2 state (enqueue script using 'init' hook and into the header) because users start receiving spam messages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "update input names"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "clean up code"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "clear value of the empty input because some themes are adding some value for all inputs"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "updated FAQ section"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "add support for comments forms loaded via ajax"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "bug fixing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "updating info"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "change the html structure"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "removed labels from plugin markup because some themes try to get text from labels and insert it into inputs like placeholders (what cause an error)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added info to FAQ section that Anti-spam plugin does not work with Jetpack Comments"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "if site has caching plugin enabled and cache is not cleared or if theme does not use 'comment_form' action - Anti-spam plugin does not worked; so now whole input added via javascript if it does not exist in html"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "add some more debug info in errors text"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "disable trackbacks because of spam (pingbacks are enabled)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "code refactor"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "renaming empty field to \"*-email-url\" to trap more spam"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "changing the input names and add some more traps because some spammers are passing the plugin"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "minor changes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "sending answer from server to client into hidden field (because client year and server year could mismatch)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "initial release"
+msgstr ""
+
+#. Found in faq header.
+msgid "What is the percentage of spam blocked?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Incompatible with:"
+msgstr ""
+
+#. Found in faq header.
+msgid "How does Anti-spam plugin work?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How does 'invisible js-captcha' method work?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How does 'invisible input trap' (aka honeypot technique) method work?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How to test what spam comments are rejected?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Does plugin block spam from Contact or other forms?"
+msgstr ""
+
+#. Found in faq header.
+msgid "What about trackback spam?"
+msgstr ""
+
+#. Found in faq header.
+msgid "What browsers are supported?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Unobtrusive JavaScript"
+msgstr ""
+
+#. Found in faq header.
+msgid "And one more extra note..."
+msgstr ""
+
+#. Found in faq header.
+msgid "Not enough information about the plugin?"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Disqus"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Jetpack Comments"
+msgstr ""
+
+#. Found in faq list item.
+msgid "AJAX Comment Form"
+msgstr ""
+
+#. Found in faq list item.
+msgid "bbPress"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "The blocking algorithm is based on 2 methods: 'invisible js-captcha' and 'invisible input trap' (aka honeypot technique)."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "All modern browsers and IE8+ are supported."
+msgstr ""

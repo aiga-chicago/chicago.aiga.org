@@ -1,0 +1,39 @@
+/*
+Theme Name: iKit Two Custom
+Theme URI: http://aiga.org
+Description: This is a child theme that extends the iKit Two theme, it can be customized without affecting the base theme.
+Author: AIGA
+Author URI: http://aiga.org/
+Version: 1.0.0
+Template: ikit_two
+
+*/
+
+.widget_text .widget-content {
+padding: 0px;
+}
+
+/* HIDE SECOND AND THIRD LOCAL SPONSOR LOGO IN FOOTER SO ARTISAN DOESN'T SHOW 3X */
+.footer-local-sponsors .grid-item-inner ul li:nth-child(2) {
+display:none;
+}
+
+.footer-local-sponsors .grid-item-inner ul li:nth-child(3) {
+display:none;
+}
+
+@media all {
+#ajax-hook-event-attendees {
+visibility: visible;
+}
+}
+
+.layout {
+max-width: 1200px;
+margin: 0 auto;
+background-color:#FFF;
+}
+
+html, body, breakpoint-body-size-l, breakpoint-body-size-s-m-l, breakpoint-body-size-s-m-l-xl, breakpoint-body, breakpoint-body-size {
+background-color:#FFF;
+}

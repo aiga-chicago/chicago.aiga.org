@@ -1,0 +1,95 @@
+.wp-box {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 20px;
+}
+
+.wp-box .inner {
+    padding: 10px;
+}
+
+.wp-box h2 {
+    margin: .25em 0 .75em;
+    padding: 0;
+}
+
+.wp-box h3 {
+    margin: 1.5em 0 0;
+}
+
+.wp-box p {
+    margin-top: 0.5em;
+}
+
+.wp-box td {
+    padding: 8px;
+}
+
+.wp-box .widefat {
+    border: #DFDFDF solid 1px;
+    border-collapse: separate;
+    border-spacing: 0;
+    vertical-align: top;
+    width: 100%;
+    background: #FEFEFE;
+}
+
+.wp-box tr:nth-child(even) {
+    background: #F9F9F9
+}
+
+.wp-box tr:nth-child(odd) {
+    background: transparent;
+}
+
+.wp-box tr:last-child  td {
+    border-bottom: 0 none;
+}
+
+.wp-box tr td:last-child {
+    border-right: 0 none;
+}
+
+.wp-box input[type="text"] {
+    padding: 7px;
+    width: 200px;
+}
+
+.wp-box .note {
+    color: #999;
+}
+
+.wp-box .section-desc {
+    color: #999;
+    padding-bottom:1em;
+}
+
+/* XXX ACF issue hiding rich text editors */
+.wp-admin #postdivrich {
+    display:block;
+}
+
+.wp-admin .widget .errors {
+    color: #FF0000;
+    padding-bottom:1em;
+}
+
+/*********************************************/
+/* Widgets
+/*********************************************/
+
+.widget .wp-box {
+    padding:10px;
+}
+
+
+/*********************************************/
+/* Sucuri
+/*********************************************/
+
+/* Hide the register notice, they can always register on the site */
+.sucuriscan-setup-notice {
+    display:none;
+}

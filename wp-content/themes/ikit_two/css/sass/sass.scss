@@ -1,0 +1,961 @@
+@import 'mixins';
+@import 'placeholders';
+
+/*********************************************/
+/* Retina background images
+/*********************************************/
+
+.footer-social-links .twitter img {
+    @include background-image-retina('../../images/footer_button_twitter', 'png', 32px, 32px);
+}
+
+.footer-social-links .twitter img:hover {
+    @include background-image-retina('../../images/footer_button_twitter_hl', 'png', 32px, 32px);
+}
+
+.footer-social-links .facebook img {
+    @include background-image-retina('../../images/footer_button_facebook', 'png', 32px, 32px);
+}
+
+.footer-social-links .youtube img {
+    @include background-image-retina('../../images/footer_button_youtube', 'png', 32px, 32px);
+}
+
+.footer-social-links .facebook img:hover {
+    @include background-image-retina('../../images/footer_button_facebook_hl', 'png', 32px, 32px);
+}
+
+.footer-social-links .flickr img {
+    @include background-image-retina('../../images/footer_button_flickr', 'png', 32px, 32px);
+}
+
+.footer-social-links .flickr img:hover {
+    @include background-image-retina('../../images/footer_button_flickr_hl', 'png', 32px, 32px);
+}
+
+.footer-social-links .vimeo img {
+    @include background-image-retina('../../images/footer_button_vimeo', 'png', 32px, 32px);
+}
+
+.footer-social-links .vimeo img:hover {
+    @include background-image-retina('../../images/footer_button_vimeo_hl', 'png', 32px, 32px);
+}
+
+.footer-social-links .youtube img:hover {
+    @include background-image-retina('../../images/footer_button_youtube_hl', 'png', 32px, 32px);
+}
+
+.footer-social-links .rss img {
+    @include background-image-retina('../../images/footer_button_rss', 'png', 32px, 32px);
+}
+
+.footer-social-links .rss img:hover {
+    @include background-image-retina('../../images/footer_button_rss_hl', 'png', 32px, 32px);
+}
+
+.footer-social-links .pinterest img {
+    @include background-image-retina('../../images/footer_button_pinterest', 'png', 32px, 32px);
+}
+
+.footer-social-links .pinterest img:hover {
+    @include background-image-retina('../../images/footer_button_pinterest_hl', 'png', 32px, 32px);
+}
+
+.footer-social-links .instagram img {
+    @include background-image-retina('../../images/footer_button_instagram', 'png', 32px, 32px);
+}
+
+.footer-social-links .instagram img:hover {
+    @include background-image-retina('../../images/footer_button_instagram_hl', 'png', 32px, 32px);
+}
+
+.footer-social-links .linkedin img {
+    @include background-image-retina('../../images/footer_button_linkedin', 'png', 32px, 32px);
+}
+
+.footer-social-links .linkedin img:hover {
+    @include background-image-retina('../../images/footer_button_linkedin_hl', 'png', 32px, 32px);
+}
+
+.gform_wrapper .sbHolder {
+    @include background-image-retina('../../images/button_contact_expand', 'png', 30px, 30px);
+}
+
+.gform_wrapper .sbHolder.open {
+    @include background-image-retina('../../images/button_contact_collapse', 'png', 30px, 30px);
+}
+
+.header-nav-menu-button {
+    @include background-image-retina('../../images/button_menu', 'png', 24px, 24px);
+}
+
+.header-nav-menu-button:hover {
+    @include background-image-retina('../../images/button_menu_hl', 'png', 24px, 24px);
+}
+
+.ikit-widget-video-billboard .video-item-overlay {
+    @include background-image-retina('../../images/button_featured_play', 'png', 80px, 80px);
+}
+
+.ikit-widget-video-billboard .video-item-image:hover .video-item-overlay {
+    @include background-image-retina('../../images/button_featured_play_hl', 'png', 80px, 80px);
+}
+
+.ikit-widget-events-billboard .event-item-slides-pager span {
+    @include background-image-retina('../../images/button_slideshow', 'png', 12px, 12px);
+}
+
+.ikit-widget-events-billboard .event-item-slides-pager span.cycle-pager-active {
+    @include background-image-retina('../../images/button_slideshow_hl', 'png', 12px, 12px);
+}
+
+.ikit-widget-events-billboard .event-item-slides-pager span:hover {
+    @include background-image-retina('../../images/button_slideshow_hl', 'png', 12px, 12px);
+}
+
+.page-layout-4-tool-link.external {
+    @include background-image-retina('../../images/button_externallink', 'png', 12px, 12px);
+}
+
+/*********************************************/
+/* Headers
+/*********************************************/
+
+h1 {
+    @extend .font-size-12;
+    @extend .font-style-10;
+}
+
+h2 {
+    @extend .font-size-14;
+    @extend .font-style-10;
+}
+
+h3 {
+    @extend .font-size-15;
+    @extend .font-style-3;
+}
+
+h4 {
+    @extend .font-size-15;
+    @extend .font-style-8;
+}
+
+h5 {
+    @extend .font-size-17;
+    @extend .font-style-10;
+}
+
+h6 {
+    @extend .font-size-19;
+    @extend .font-style-10;
+}
+
+/*********************************************/
+/* WordPress image caption support
+/*********************************************/
+
+.wp-caption {
+    @extend .font-size-17;
+    @extend .font-style-10;
+    @extend .font-color-18;
+}
+
+/*********************************************/
+/* Misc
+/*********************************************/
+
+/* Cycle slideshow uses visibility attribute to show and hide slides so we need to use opacity instead */
+.cycle-slideshow {
+    opacity:0;
+}
+
+.css-loader-fallback {
+    @extend .font-style-3;
+}
+
+.link-block {
+    @extend .link-style-2;
+}
+
+.wp-editor {
+    @extend .link-style-1;
+}
+
+body {
+    @extend .font-color-20;
+}
+
+html body.ikit-two.ikit {
+    @extend .background-color-6;
+}
+
+html body.ikit-two.ikit.loaded {
+    @extend .background-color-22;
+}
+
+.grid-item-empty {
+    @extend .font-size-13;
+    @extend .font-color-20;
+}
+
+/* Comments */
+
+.comments {
+    @extend .background-color-23;
+}
+
+.comments .nocomments {
+    @extend .font-color-2;
+}
+
+.comments .comments-disclaimer {
+    @extend .font-color-2;
+    @extend .link-style-1;
+}
+
+html body .layout .comments #disqus_thread,
+html body .layout .comments #disqus_thread iframe {
+    @extend .font-color-2;
+}
+
+/* Box button */
+
+html body .layout .box-button-1 {
+    @extend .font-style-3;
+    @extend .font-size-17;
+    @extend .font-style-2;
+}
+
+html body .layout .box-button-1-container {
+    @extend .font-color-2;
+    @extend .link-style-6;
+}
+
+/*********************************************/
+/* Grid
+/*********************************************/
+
+.grid[cat_plugin_fluid_grid_layout_mode="fitRows"] .grid-item-inner {
+    @extend .border-color-12;
+}
+
+/*********************************************/
+/* Banner header
+/*********************************************/
+
+.banner-header {
+    @extend .font-size-19;
+    @extend .font-color-18;
+    @extend .font-style-2;
+    @extend .font-style-3;
+}
+
+.banner-header .banner-header-title {
+    @extend .border-color-12;
+}
+
+.banner-header.cat-plugin-click-redirect:hover {
+    @extend .font-color-13;
+}
+
+/*********************************************/
+/* Page header 4
+/*********************************************/
+
+.page-header-4-title {
+    @extend .font-size-12;
+    @extend .font-style-3;
+}
+
+.page-header-4-title-container {
+    @extend .font-color-2;
+}
+
+.page-header-4-divider {
+    @extend .border-color-2;
+}
+
+/*********************************************/
+/* Layout
+/*********************************************/
+.layout-content {
+    @extend .background-color-6;
+}
+
+/*********************************************/
+/* Nav search
+/*********************************************/
+.nav-search {
+    @extend .background-color-22;
+    @extend .font-color-20;
+}
+
+.nav-search-form {
+    @extend .border-color-4;
+}
+
+.nav-search #searchform {
+    @extend .font-size-14;
+}
+
+.nav-search #searchform .s {
+    @extend .font-size-14;
+    @extend .font-color-2;
+}
+
+/*********************************************/
+/* Footer
+/*********************************************/
+
+.footer {
+    @extend .background-color-22;
+    @extend .font-size-17;
+}
+
+body .layout .footer a:hover {
+    @extend .font-color-2;
+}
+
+.footer .grid-item {
+    @extend .font-color-20;
+}
+
+.footer .footer-header {
+    @extend .font-style-2;
+    @extend .font-color-20;
+    @extend .font-size-19;
+    @extend .font-style-3;
+}
+
+.footer .footer-mailing-list-submit {
+    @extend .font-color-21;
+    @extend .font-style-2;
+    @extend .background-color-9;
+    @extend .border-color-4;
+}
+
+.footer .footer-mailing-list-submit:hover {
+    @extend .font-color-1;
+    @extend .background-color-2;
+}
+
+.footer .footer-mailing-list .email {
+    @extend .font-size-17;
+    @extend .background-color-22;
+    @extend .font-color-2;
+    @extend .border-color-4;
+}
+
+/*********************************************/
+/* Header
+/*********************************************/
+
+.header {
+    @extend .background-color-22;
+}
+
+.header-text {
+    @extend .font-style-3;
+    @extend .font-size-17;
+    @extend .font-style-2;
+}
+
+.header-nav-menu-button {
+    @extend .font-color-2;
+    @extend .font-style-2;
+    @extend .font-style-3;
+}
+
+.header-nav-menu-button:hover {
+    @extend .font-color-20;
+}
+
+/*********************************************/
+/* Editor
+/*********************************************/
+
+.editor-header21 {
+    @extend .font-size-17;
+    @extend .font-style-3;
+    @extend .font-style-2;
+}
+
+.editor-header22 {
+    @extend .font-size-13;
+    @extend .font-style-3;
+}
+
+.editor-header23 {
+    @extend .font-size-19;
+    @extend .font-color-18;
+    @extend .font-style-2;
+    @extend .font-style-3;
+}
+
+/*********************************************/
+/* Featured image gallery
+/*********************************************/
+.feature .image-gallery-title {
+    @extend .font-size-12;
+    @extend .font-color-2;
+    @extend .font-style-3;
+}
+
+/*********************************************/
+/* Nav menu
+/*********************************************/
+.nav-menu-grid {
+    @extend .background-color-22;
+}
+
+.nav-menu .grid[cat_plugin_fluid_grid_layout_mode="fitRows"] .grid-item-inner {
+    @extend .border-color-4;
+}
+
+.nav-menu-background {
+    @extend .background-color-1;
+}
+
+.nav-menu-item-link {
+    @extend .font-style-2;
+    @extend .font-size-14;
+    @extend .font-color-2;
+    @extend .font-style-3;
+}
+
+.nav-menu-item-link.active {
+    @extend .font-color-13;
+}
+
+.nav-menu-item-link:hover {
+    @extend .font-color-13;
+}
+
+.nav-menu-submenu-item-link {
+    @extend .font-size-17;
+    @extend .font-style-4;
+    @extend .font-color-2;
+}
+
+.nav-menu-submenu-item-external .nav-menu-submenu-item-link {
+    @extend .font-color-20;
+}
+
+.nav-menu-submenu-item-external .nav-menu-submenu-item-link:hover,
+.nav-menu-submenu-item-link:hover {
+    @extend .font-color-13;
+}
+
+.nav-menu-submenu-item-link.active {
+    @extend .font-color-13;
+}
+
+/*********************************************/
+/* Gravity form
+/*********************************************/
+
+.layout .gform_wrapper {
+    @extend .background-color-24;
+}
+
+.layout .layout-content .gform_wrapper .sbHolder,
+.layout .layout-content .gform_wrapper input {
+    @extend .font-size-17;
+    @extend .font-style-10;
+}
+
+.layout .gform_wrapper .gsection {
+    @extend .font-style-3;
+    @extend .border-color-12;
+    @extend .font-color-20;
+}
+
+.layout .gform_wrapper label {
+    @extend .font-size-17;
+    @extend .font-style-10;
+}
+
+.layout .layout-content .gform_wrapper a.sbSelector {
+    @extend .font-color-20;
+}
+
+.layout .gform_wrapper .sbOptions {
+    @extend .border-color-12;
+}
+
+.layout .gform_wrapper #gforms_confirmation_message {
+    @extend .font-size-14;
+}
+
+.layout .gform_wrapper .gfield_required {
+    @extend .font-color-2;
+}
+
+.gform_wrapper .gform_footer input[type=submit] {
+    @extend .box-button-1;
+    @extend .background-color-13;
+    @extend .font-color-2;
+    @extend .font-style-2;
+}
+
+.gform_wrapper .gform_footer input[type=submit]:hover {
+    @extend .font-color-1;
+}
+
+.gform_wrapper .top_label .gfield_label {
+    @extend .font-color-18;
+    @extend .font-style-3;
+    @extend .font-size-19;
+    @extend .font-style-2;
+}
+
+
+.layout .gform_wrapper .sbOptions {
+    @extend .font-color-20;
+    @extend .background-color-24;
+    @extend .link-style-3;
+    @extend .font-size-17;
+}
+
+.layout .gform_wrapper .ginput_container {
+    @extend .background-color-2;
+}
+
+.layout .gform_wrapper .validation_message,
+.layout .gform_wrapper .validation_error,
+.layout .gform_wrapper .top_label .gfield_error {
+    @extend .font-color-13;
+}
+
+.layout .gform_wrapper .sbSelector {
+    @extend .font-style-2;
+    @extend .font-color-20;
+}
+
+.gform_wrapper .ginput_container {
+    @extend .border-color-12;
+}
+
+.gform_wrapper .top_label textarea {
+    @extend .border-color-12;
+}
+
+.layout .gform_wrapper .sbSelector:hover,
+.layout .gform_wrapper .sbSelector.open:hover {
+    @extend .font-color-20;
+}
+
+.layout .gform_wrapper .sbSelector.open {
+    @extend .font-color-18;
+}
+
+.layout .gform_wrapper .sbHolder.open {
+    @extend .background-color-24;
+}
+
+/*********************************************/
+/* Unsupported browser
+/*********************************************/
+.unsupported-browser-dialog {
+    @extend .background-color-13;
+    @extend .font-color-2;
+    @extend .font-size-17;
+}
+
+.unsupported-browser-dialog-modal {
+    @extend .background-color-1;
+}
+
+/*********************************************/
+/* Page header 3
+/*********************************************/
+
+.page-header-3-section-title {
+    @extend .font-color-18;
+    @extend .font-size-14;
+    @extend .font-style-2;
+    @extend .link-style-3;
+}
+
+.page-header-3 > table {
+    @extend .border-color-12;
+}
+
+/*********************************************/
+/* Page header 5
+/*********************************************/
+
+.page-header-5-title {
+    @extend .font-size-12;
+    @extend .font-color-20;
+    @extend .border-color-12;
+    @extend .font-style-3;
+}
+
+/*********************************************/
+/* Page layout 4
+/*********************************************/
+
+.page-layout-4-tool-filter {
+    @extend .font-size-17;
+    @extend .font-color-18;
+    @extend .border-color-12;
+}
+
+.page-layout-4-tools-footer {
+    @extend .border-color-12;
+}
+
+.page-layout-4-tool-filter:hover,
+.page-layout-4-tool-filter.active {
+    @extend .font-color-2;
+    @extend .background-color-13;
+    @extend .border-color-10;
+}
+
+.page-layout-4-tool-link:hover,
+.page-layout-4-tool-link.active {
+    @extend .font-color-13;
+}
+
+.page-layout-4-loader {
+    @extend .background-color-13;
+}
+
+.page-layout-4-tool-link {
+    @extend .font-size-17;
+    @extend .font-color-18;
+}
+
+.page-layout-4-tool-header {
+    @extend .font-style-2;
+    @extend .font-size-19;
+    @extend .font-color-18;
+    @extend .font-style-3;
+}
+
+.page-layout-4-sub-content-title {
+    @extend .font-color-2;
+    @extend .font-style-2;
+    @extend .font-size-19;
+    @extend .font-style-3;
+}
+
+.page-layout-4-body-description {
+    @extend .font-size-15;
+    @extend .font-style-8;
+    @extend .font-color-20;
+    @extend .link-style-1;
+    @extend .border-color-12;
+}
+
+.page-layout-body-paragraph-text {
+    @extend .font-style-8;
+    @extend .font-size-15;
+    @extend .font-color-20;
+}
+
+.page-layout-4-tool-text {
+    @extend .font-color-18;
+    @extend .font-size-17;
+}
+
+/*********************************************/
+/* Widgets
+/*********************************************/
+
+/* Page */
+
+.ikit-widget-page {
+    @extend .font-style-8;
+    @extend .font-color-18;
+}
+
+/* Quote */
+
+.ikit-widget-quote .quote-item {
+    @extend .font-size-13;
+    @extend .font-style-8;
+    @extend .font-color-20;
+}
+
+.ikit-widget-quote .quote-item-attribution {
+    @extend .font-size-13;
+    @extend .font-style-9;
+}
+
+/* Text */
+
+.widget_text .widget-content {
+    @extend .link-style-1;
+}
+
+/* Eye on Design */
+
+.ikit-widget-eyeondesign .eyeondesign-item-title {
+    @extend .font-color-20;
+    @extend .font-size-14;
+}
+
+/* Design Envy */
+
+.ikit-widget-designenvy .designenvy-item-title {
+    @extend .font-color-20;
+    @extend .font-size-14;
+}
+
+.ikit-widget-designenvy .designenvy-item-curator {
+    @extend .font-color-18;
+    @extend .font-size-14;
+}
+
+/* New members */
+
+.ikit-widget-new-members .member-item-name {
+    @extend .font-color-20;
+    @extend .font-size-17;
+    @extend .link-style-3;
+}
+
+.ikit-widget-new-members .member-item-date {
+    @extend .font-style-2;
+    @extend .font-color-18;
+    @extend .font-size-19;
+}
+
+.ikit-widget-new-members .member-item-type {
+    @extend .font-style-2;
+    @extend .font-color-18;
+    @extend .font-size-19;
+}
+
+/* Facebook */
+
+.ikit-widget-facebook .facebook-item {
+    @extend .font-color-18;
+    @extend .font-size-17;
+    @extend .link-style-1;
+    @extend .link-style-7;
+}
+
+.ikit-widget-facebook .facebook-item-read-more {
+    @extend .font-size-19;
+    @extend .font-style-2;
+}
+
+/* Events */
+
+.ikit-widget-events .widget-content {
+    @extend .background-color-24;
+}
+
+.ikit-widget-events .event-item-title {
+    @extend .font-size-14;
+    @extend .font-color-18;
+    @extend .link-style-3;
+}
+
+.ikit-widget-events .event-item-description {
+    @extend .font-size-17;
+    @extend .font-color-18;
+    @extend .font-style-8;
+}
+
+.ikit-widget-events .event-item-attributes {
+    @extend .font-size-19;
+    @extend .font-style-2;
+}
+
+.ikit-widget-events .event-item-location {
+    @extend .font-color-13;
+    @extend .font-style-3;
+}
+
+.ikit-widget-events .event-item-date {
+    @extend .font-color-18;
+}
+
+.ikit-widget-events .event-item-external-source,
+.ikit-widget-events .event-item-internal-source {
+    @extend .font-color-13;
+    @extend .font-style-6;
+}
+
+/* Internal events */
+
+.ikit-widget-events-internal .widget-content {
+    @extend .background-color-24;
+}
+
+.ikit-widget-events-internal .event-item-title {
+    @extend .font-size-14;
+    @extend .font-color-18;
+    @extend .link-style-3;
+}
+
+.ikit-widget-events-internal .event-item-description {
+    @extend .font-size-17;
+    @extend .font-color-18;
+    @extend .font-style-8;
+}
+
+.ikit-widget-events-internal .event-item-attributes {
+    @extend .font-size-19;
+    @extend .font-style-2;
+}
+
+.ikit-widget-events-internal .event-item-location {
+    @extend .font-color-13;
+    @extend .font-style-3;
+}
+
+.ikit-widget-events-internal .event-item-date {
+    @extend .font-color-18;
+}
+
+.ikit-widget-events-internal .event-item-external-source,
+.ikit-widget-events-internal .event-item-internal-source {
+    @extend .font-color-13;
+    @extend .font-style-6;
+}
+
+/* News */
+
+.ikit-widget-news .widget-content {
+    @extend .background-color-24;
+}
+
+.ikit-widget-news .news-item-title {
+    @extend .font-size-14;
+    @extend .font-color-18;
+    @extend .link-style-3;
+}
+
+.ikit-widget-news .news-item-description {
+    @extend .font-size-17;
+    @extend .font-color-18;
+    @extend .font-style-8;
+}
+
+.ikit-widget-news .news-item-attributes {
+    @extend .font-size-19;
+    @extend .font-style-2;
+}
+
+.ikit-widget-news .news-item-date {
+    @extend .font-color-18;
+}
+
+.ikit-widget-news .news-item-external-source {
+    @extend .font-color-13;
+    @extend .font-style-6;
+}
+
+/* Twitter */
+
+.ikit-widget-twitter .twitter-item {
+    @extend .font-color-18;
+    @extend .font-size-17;
+    @extend .link-style-7;
+}
+
+/* I am AIGA */
+
+.ikit-widget-i-am-aiga .member-item-name {
+    @extend .font-size-14;
+    @extend .font-color-18;
+    @extend .link-style-3;
+}
+
+/* Featured portfolio */
+
+.ikit-widget-featured-portfolio .portfolio-item-project {
+    @extend .font-color-18;
+    @extend .font-size-14;
+    @extend .link-style-3;
+}
+
+.ikit-widget-featured-portfolio .portfolio-item-author {
+    @extend .font-color-20;
+    @extend .font-size-14;
+    @extend .link-style-3;
+}
+
+/* Featured job */
+
+.ikit-widget-featured-job .job-item-title {
+    @extend .font-color-20;
+    @extend .font-size-14;
+}
+
+.ikit-widget-featured-job .job-item-company {
+    @extend .font-color-18;
+    @extend .font-size-14;
+}
+
+/* News billboard */
+
+.ikit-widget-news-billboard .news-item-title {
+    @extend .font-size-14;
+    @extend .font-color-20;
+    @extend .link-style-3;
+}
+
+.ikit-widget-news-billboard .news-item-description {
+    @extend .font-size-17;
+    @extend .font-color-18;
+    @extend .font-style-8;
+}
+
+.ikit-widget-news-billboard .news-item-attributes {
+    @extend .font-size-19;
+    @extend .font-style-2;
+}
+
+.ikit-widget-news-billboard .news-item-date {
+    @extend .font-color-18;
+}
+
+.ikit-widget-news-billboard .news-item-external-source {
+    @extend .font-color-13;
+    @extend .font-style-6;
+}
+
+/* Video billboard */
+
+.ikit-widget-video-billboard {
+    @extend .background-color-22;
+}
+
+.ikit-widget-video-billboard .banner-header .banner-header-title {
+    @extend .font-color-20;
+    @extend .border-color-4;
+}
+
+.ikit-widget-video-billboard .video-item-title {
+    @extend .font-color-2;
+    @extend .font-size-14;
+    @extend .font-style-8;
+}
+
+/* Events billboard */
+
+.ikit-widget-events-billboard .event-item-title {
+    @extend .font-style-3;
+    @extend .link-style-3;
+    @extend .font-color-20;
+}
+
+.ikit-widget-events-billboard .event-item-attributes,
+.ikit-widget-events-billboard .event-item-title {
+    @extend .font-size-12;
+    @extend .font-color-18;
+}
+
+.ikit-widget-events-billboard .event-item-description {
+    @extend .font-size-17;
+    @extend .font-color-18;
+    @extend .font-style-8;
+}
+

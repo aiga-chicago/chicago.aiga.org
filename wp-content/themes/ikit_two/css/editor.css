@@ -1,0 +1,41 @@
+/*********************************************/
+/* TinyMCE styles (only appears in admin for reference)
+/*********************************************/
+
+#tinymce .editor-header21 {
+    font-size:20px;
+    font-weight:bold;
+    line-height:32px;
+    color:rgb(71,75,79);
+}
+
+#tinymce .editor-header22 {
+    font-size:36px;
+    font-weight:bold;
+    line-height:40px;
+    color:rgb(71,75,79);
+}
+
+#tinymce .editor-header23 {
+    font-size:12px;
+    color:rgb(162,165,165);
+    line-height:16px;
+}
+
+/*********************************************/
+/* Editor styles (appears on page and in admin)
+/*********************************************/
+
+.editor-header21 {
+    padding-top:15px;
+    padding-bottom:10px;
+}
+
+.editor-header22 {
+    padding-bottom:30px;
+    padding-top:15px;
+}
+
+.editor-header23 {
+    padding-bottom:30px;
+}

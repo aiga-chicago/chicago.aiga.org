@@ -1,0 +1,140 @@
+@mixin font-color($selector, $color) {
+    #{$selector}, #{$selector} a, body a#{$selector} {
+        color:$color;
+    }
+}
+
+@mixin background-color($selector, $color) {
+    #{$selector} {
+        background-color:$color;
+    }
+}
+
+@mixin font-size($selector, $font_size, $line_height, $font_size_xl, $line_height_xl, $font_size_ml, $line_height_ml, $font_size_s, $line_height_s) {
+
+    #{$selector}, #{$selector} a, body a#{$selector} {
+        font-size:$font_size;
+        line-height:$line_height;
+    }
+
+    .breakpoint-body-size-xl #{$selector}, .breakpoint-body-size-xl #{$selector} a, body.breakpoint-body-size-xl a#{$selector} {
+        font-size:$font_size_xl;
+        line-height:$line_height_xl;
+    }
+
+    .breakpoint-body-size-m #{$selector}, .breakpoint-body-size-m #{$selector} a, body.breakpoint-body-size-m a#{$selector},
+    .breakpoint-body-size-l #{$selector}, .breakpoint-body-size-l #{$selector} a, body.breakpoint-body-size-l a#{$selector} {
+        font-size:$font_size_ml;
+        line-height:$line_height_ml;
+    }
+
+    .breakpoint-body-size-s #{$selector}, .breakpoint-body-size-s #{$selector} a, body.breakpoint-body-size-s a#{$selector} {
+        font-size:$font_size_s;
+        line-height:$line_height_s;
+    }
+
+    body #{$selector}-fixed, body #{$selector}-fixed a, body a#{$selector}-fixed {
+        font-size:$font_size;
+        line-height:$line_height;
+    }
+
+}
+
+@mixin background-image-retina($file, $type, $width, $height) {
+  background-image: url($file + '.' + $type);
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx){
+    & {
+      background-image: url($file + '@2x.' + $type);
+      -webkit-background-size: $width $height;
+      -moz-background-size: $width $height;
+      -o-background-size: $width $height;
+      background-size: $width $height;
+    }
+  }
+}
+
+@mixin font-family-tiempos($selector) {
+
+    #{$selector} {
+        font-family: Tiempos,serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+    #{$selector} em, #{$selector} i {
+        font-family: Tiempos,serif;
+        font-style: italic;
+        font-weight: 400;
+    }
+
+}
+
+@mixin font-family-tiempos-italic($selector) {
+
+    #{$selector} {
+        font-family: Tiempos,serif;
+        font-style: italic;
+        font-weight: 400;
+    }
+
+}
+
+@mixin font-family-franklin-gothic($selector) {
+
+    #{$selector} {
+        font-family: "franklin-gothic-urw-n4","franklin-gothic-urw",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+    #{$selector} em, #{$selector} i {
+        font-family: "franklin-gothic-urw-i4","franklin-gothic-urw",sans-serif;
+        font-style: italic;
+        font-weight: 400;
+    }
+    #{$selector} strong, #{$selector} b {
+        font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    #{$selector} strong em, #{$selector} b em,
+    #{$selector} strong i, #{$selector} b i,
+    #{$selector} em strong, #{$selector} em b,
+    #{$selector} i strong, #{$selector} i b {
+        font-family: "franklin-gothic-urw-i7","franklin-gothic-urw",sans-serif;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+}
+
+@mixin font-family-franklin-gothic-italic($selector) {
+
+    #{$selector} {
+        font-family: "franklin-gothic-urw-i4","franklin-gothic-urw",sans-serif;
+        font-style: italic;
+        font-weight: 400;
+    }
+}
+
+@mixin font-family-franklin-gothic-bold($selector) {
+
+    #{$selector} {
+        font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+    }
+}
+
+@mixin font-family-franklin-gothic-bold-italic($selector) {
+
+    #{$selector} {
+        font-family: "franklin-gothic-urw-i7","franklin-gothic-urw",sans-serif;
+        font-style: italic;
+        font-weight: 700;
+    }
+}

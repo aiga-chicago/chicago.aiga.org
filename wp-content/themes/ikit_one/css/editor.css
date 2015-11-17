@@ -1,0 +1,212 @@
+.editor-header1,.editor-header2,.editor-header3,.editor-header4,.editor-header5,.editor-header6,.editor-header7,.editor-header8,.editor-header9,.editor-header10,.editor-header11,.editor-header12 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.wp-editor ol, .wp-editor ul, .wp-editor li {
+    list-style:inherit;
+}
+
+.wp-editor li {
+    list-style-position: inside;
+}
+
+/* embedded media */
+
+.wp-editor iframe {
+    max-width:100%;
+}
+
+.wp-editor img {
+    max-width:100%;
+}
+
+/* bold styles */
+.wp-editor strong,.editor-header7,.editor-header8,.editor-header9,.editor-header10,.editor-header11,.editor-header12 {
+    font-family: "ff-kievit-web-n7", "ff-kievit-web", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* replicate bold on admin side, since not using typekit there */
+.wp-admin .wp-editor strong,.wp-admin .editor-header7,.wp-admin .editor-header8,.wp-admin .editor-header9,.wp-admin .editor-header10,.wp-admin .editor-header11,.wp-admin .editor-header12 {
+    font-weight: bold;
+}
+
+.wp-editor .editor-header1 p,.wp-editor .editor-header2 p,.wp-editor .editor-header3 p,.wp-editor .editor-header4 p,.wp-editor .editor-header5 p,.wp-editor .editor-header6 p,.wp-editor .editor-header7 p,.wp-editor .editor-header8 p,.wp-editor .editor-header9 p,.wp-editor .editor-header10 p,.wp-editor .editor-header11 p,.wp-editor .editor-header12 p {
+    padding-bottom: 0px;
+}
+
+.wp-editor .external-link {
+    padding-right: 0;
+    background: none;
+}
+
+.editor-header1,.editor-header4,.editor-header7,.editor-header10 {
+    border-top: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-bottom: 12px;
+}
+
+.editor-header2,.editor-header5,.editor-header8,.editor-header11 {
+    border-top: 1px solid #DFDFDF;
+    padding-top: 12px;
+    margin-bottom: 12px;
+}
+
+.editor-header3,.editor-header6,.editor-header9,.editor-header12 {
+    border-bottom: 1px solid #DFDFDF;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.box-section-inset .editor-header1,.box-section-inset .editor-header4,.box-section-inset .editor-header7,.box-section-inset .editor-header10 {
+    border-top: 1px solid #A7A9AC;
+    border-bottom: 1px solid #A7A9AC;
+}
+
+.box-section-inset .editor-header2,.box-section-inset .editor-header5,.box-section-inset .editor-header8,.box-section-inset .editor-header11 {
+    border-top: 1px solid #A7A9AC;
+}
+
+.box-section-inset .editor-header3,.box-section-inset .editor-header6,.box-section-inset .editor-header9,.box-section-inset .editor-header12 {
+    border-bottom: 1px solid #A7A9AC;
+}
+
+.wp-editor p {
+    padding-bottom: 1em;
+}
+
+.wp-editor p,.wp-editor ul {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.page-ikit-section-portfolio .editor-header1,.page-ikit-section-portfolio .editor-header2,.page-ikit-section-portfolio .editor-header3,.page-ikit-section-portfolio .editor-header4,.page-ikit-section-portfolio .editor-header5,.page-ikit-section-portfolio .editor-header5,.page-ikit-section-portfolio .editor-header6,.page-ikit-section-portfolio .editor-header7,.page-ikit-section-portfolio .editor-header8,.page-ikit-section-portfolio .editor-header9,.page-ikit-section-portfolio .editor-header10,.page-ikit-section-portfolio .editor-header11,.page-ikit-section-portfolio .editor-header12,.page-ikit-section-portfolio .editor-ikit-section-color {
+    color: #662D91;
+}
+
+.page-ikit-section-job .editor-header1,.page-ikit-section-job .editor-header2,.page-ikit-section-job .editor-header3,.page-ikit-section-job .editor-header4,.page-ikit-section-job .editor-header5,.page-ikit-section-job .editor-header5,.page-ikit-section-job .editor-header6,.page-ikit-section-job .editor-header7,.page-ikit-section-job .editor-header8,.page-ikit-section-job .editor-header9,.page-ikit-section-job .editor-header10,.page-ikit-section-job .editor-header11,.page-ikit-section-job .editor-header12,.page-ikit-section-job .editor-ikit-section-color {
+    color: #BA4C34;
+}
+
+.page-ikit-section-about-us .editor-header1,.page-ikit-section-about-us .editor-header2,.page-ikit-section-about-us .editor-header3,.page-ikit-section-about-us .editor-header4,.page-ikit-section-about-us .editor-header5,.page-ikit-section-about-us .editor-header5,.page-ikit-section-about-us .editor-header6,.page-ikit-section-about-us .editor-header7,.page-ikit-section-about-us .editor-header8,.page-ikit-section-about-us .editor-header9,.page-ikit-section-about-us .editor-header10,.page-ikit-section-about-us .editor-header11,.page-ikit-section-about-us .editor-header12,.page-ikit-section-about-us .editor-ikit-section-color {
+    color: #F1563F;
+}
+
+.page-ikit-section-get-involved .editor-header1,.page-ikit-section-get-involved .editor-header2,.page-ikit-section-get-involved .editor-header3,.page-ikit-section-get-involved .editor-header4,.page-ikit-section-get-involved .editor-header5,.page-ikit-section-get-involved .editor-header5,.page-ikit-section-get-involved .editor-header6,.page-ikit-section-get-involved .editor-header7,.page-ikit-section-get-involved .editor-header8,.page-ikit-section-get-involved .editor-header9,.page-ikit-section-get-involved .editor-header10,.page-ikit-section-get-involved .editor-header11,.page-ikit-section-get-involved .editor-header12,.page-ikit-section-get-involved .editor-ikit-section-color {
+    color: #39B54A;
+}
+
+.page-ikit-section-membership .editor-header1,.page-ikit-section-membership .editor-header2,.page-ikit-section-membership .editor-header3,.page-ikit-section-membership .editor-header4,.page-ikit-section-membership .editor-header5,.page-ikit-section-membership .editor-header5,.page-ikit-section-membership .editor-header6,.page-ikit-section-membership .editor-header7,.page-ikit-section-membership .editor-header8,.page-ikit-section-membership .editor-header9,.page-ikit-section-membership .editor-header10,.page-ikit-section-membership .editor-header11,.page-ikit-section-membership .editor-header12,.page-ikit-section-membership .editor-ikit-section-color {
+    color: #EBAC22;
+}
+
+.page-ikit-section-resources .editor-header1,.page-ikit-section-resources .editor-header2,.page-ikit-section-resources .editor-header3,.page-ikit-section-resources .editor-header4,.page-ikit-section-resources .editor-header5,.page-ikit-section-resources .editor-header5,.page-ikit-section-resources .editor-header6,.page-ikit-section-resources .editor-header7,.page-ikit-section-resources .editor-header8,.page-ikit-section-resources .editor-header9,.page-ikit-section-resources .editor-header10,.page-ikit-section-resources .editor-header11,.page-ikit-section-resources .editor-header12,.page-ikit-section-resources .editor-ikit-section-color {
+    color: #A97C50;
+}
+
+.page-ikit-section-contact .editor-header1,.page-ikit-section-contact .editor-header2,.page-ikit-section-contact .editor-header3,.page-ikit-section-contact .editor-header4,.page-ikit-section-contact .editor-header5,.page-ikit-section-contact .editor-header5,.page-ikit-section-contact .editor-header6,.page-ikit-section-contact .editor-header7,.page-ikit-section-contact .editor-header8,.page-ikit-section-contact .editor-header9,.page-ikit-section-contact .editor-header10,.page-ikit-section-contact .editor-header11,.page-ikit-section-contact .editor-header12,.page-ikit-section-contact .editor-ikit-section-color {
+    color: #27AAE1;
+}
+
+.single-post .editor-header1,.single-post .editor-header2,.single-post .editor-header3,.single-post .editor-header4,.single-post .editor-header5,.single-post .editor-header5,.single-post .editor-header6,.single-post .editor-header7,.single-post .editor-header8,.single-post .editor-header9,.single-post .editor-header10,.single-post .editor-header11,.single-post .editor-header12 {
+    color: #F7941E;
+}
+
+.single-ikit_event .editor-header1,.single-ikit_event .editor-header2,.single-ikit_event .editor-header3,.single-ikit_event .editor-header4,.single-ikit_event .editor-header5,.single-ikit_event .editor-header5,.single-ikit_event .editor-header6,.single-ikit_event .editor-header7,.single-ikit_event .editor-header8,.single-ikit_event .editor-header9,.single-ikit_event .editor-header10,.single-ikit_event .editor-header11,.single-ikit_event .editor-header12 {
+    color: #EC008C;
+}
+
+.wp-editor h1,.wp-editor h2,.wp-editor h3,.wp-editor h4,.wp-editor h5,.wp-editor h6 {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.0em;
+    padding-bottom: 12px;
+}
+
+.wp-editor h1 {
+    font-size: 6.0em;
+}
+
+.wp-editor h2 {
+    font-size: 4.0em;
+}
+
+.wp-editor h3 {
+    font-size: 3.2em;
+}
+
+.wp-editor h4 {
+    font-size: 2.4em;
+}
+
+.wp-editor h5 {
+    font-size: 1.4em;
+}
+
+.wp-editor h6 {
+    font-size: .8em;
+}
+
+/* 1. Header 1 = Rule Above & Below with section color type */
+.ikit-one .wp-editor .editor-header1 {
+
+}
+
+/* 2. Header 2 = Rule Above with section color type */
+.ikit-one .wp-editor .editor-header2 {
+
+}
+
+/* 3. Header 3 = Rule Below with section color type */
+.ikit-one .wp-editor .editor-header3 {
+
+}
+
+/* 4. Header 4 = Rule Above & Below without any section color, just in grey text */
+.ikit-one .wp-editor .editor-header4 {
+    color: inherit;
+}
+
+/* 5. Header 5 = Rule Above without any section color, just in grey text */
+.ikit-one .wp-editor .editor-header5 {
+    color: inherit;
+}
+
+/* 6. Header 6 = Rule Below without any section color, just in grey text */
+.ikit-one .wp-editor .editor-header6 {
+    color: inherit;
+}
+
+/* 7. Header 7 = BOLD BLACK Rule Above & Below with section color type */
+.ikit-one .wp-editor .editor-header7 {
+
+}
+
+/* 8. Header 8 = BOLD BLACK Rule Above with section color type */
+.ikit-one .wp-editor .editor-header8 {
+
+}
+
+/* 9. Header 9 = BOLD BLACK Rule Below with section color type */
+.ikit-one .wp-editor .editor-header9 {
+
+}
+
+/* 10. Header 10 = BOLD BLACK Rule Above & Below without any section color, just in grey text */
+.ikit-one .wp-editor .editor-header10 {
+    color: inherit;
+}
+
+/* 11. Header 11 = BOLD BLACK Rule Above without any section color, just in grey text */
+.ikit-one .wp-editor .editor-header11 {
+    color: inherit;
+}
+
+/* 12. Header 12 = BOLD BLACK Rule Below without any section color, just in grey text */
+.ikit-one .wp-editor .editor-header12 {
+    color: inherit;
+}
