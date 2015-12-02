@@ -54,10 +54,6 @@ Or if you want "www" to work as well, do:
 192.168.33.10 whatever-i-want.local www.whatever-i-want.local
 ```
 
-Technically you could also use a Vagrant Plugin like [Vagrant Hostmanager][15] to automatically update your host file when you run Vagrant Up. However, the purpose of Scotch Box is to have as little dependencies as possible so that it's always working when you run "vagrant up".
-
-
-
  [1]: https://www.virtualbox.org/wiki/Downloads
  [2]: https://www.vagrantup.com/downloads.html
  [3]: http://192.168.33.91/
