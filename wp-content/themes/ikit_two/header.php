@@ -253,7 +253,6 @@ else {
     </div>
 
     <div class="nav-menu-grid">
-        <h1>Hey, a more calm test.</h1>
 
         <div class="cat-plugin-fluid-grid grid"
             cat_plugin_fluid_grid_layout_mode="fitRows"
