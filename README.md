@@ -1,6 +1,11 @@
 # chicago.aiga.org
 
-The home for AIGA Chicago. Hi Mig!
+The home for AIGA Chicago.
+
+# Process
+- Edit local copy
+- Commit to GitHub
+- Upload to `ikit_two_custom`
 
 # Git cheat sheet
 - Pull changes: `git pull`
