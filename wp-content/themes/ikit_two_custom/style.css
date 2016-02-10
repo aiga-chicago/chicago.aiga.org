@@ -56,12 +56,6 @@ font-size: 14px;
 line-height: 20px;
 }
 
-.wp-editor ol, .wp-editor ul {
-margin-left: 0 !important;
-position: relative;
-}
-
-
 .breakpoint-body-size-s .metaslider {
 padding: 0;
 }
