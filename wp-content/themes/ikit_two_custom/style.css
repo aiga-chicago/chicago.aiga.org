@@ -12,6 +12,27 @@ Template: ikit_two
 padding: 0px;
 }
 
+/* HIDE TEXT LOGO IN HEADER - WAS ONLY ABLE TO BE DISPLAYED IN FRANKLIN AFTER LOGO REFRESH */
+.header-col1 {
+	display: none;
+}
+
+/* CUSTOM SPONSOR PAGE - FONT FORMATTING FOR 6 COLUMNS */
+.one_sixth {
+font-size: 12px;
+line-height: 18px;
+}
+
+.one_sixth strong {
+line-height: 22px;
+}
+
+.in-kind p {
+font-size: 12px;
+line-height: 18px;
+}
+
+
 /* EVENT PAGE TITLES - REMOVE GRADIENT AND TEXT */
 .single-ikit_event .page-header-4-overlay {
 visibility: hidden;
@@ -27,12 +48,6 @@ float: right;
 padding: 0 0 24px 36px;
 }
 
-.wp-editor ol, .wp-editor ul {
-margin-left: 0 !important;
-position: relative;
-top: 1em !important;
-}
-
 .metaslider .caption {
 font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
 font-style: normal;
@@ -40,6 +55,12 @@ font-weight: 500 !important;
 font-size: 14px;
 line-height: 20px;
 }
+
+.wp-editor ol, .wp-editor ul {
+margin-left: 0 !important;
+position: relative;
+}
+
 
 .breakpoint-body-size-s .metaslider {
 padding: 0;
@@ -74,6 +95,14 @@ font-weight: 700;
 font-size: 32px;
 }
 
+blockquote {
+font-size: 2em;
+line-height: 1.2em;
+border-left: 5px #00ccff solid;
+padding-left: 2em  !important;
+font-style: italic;
+}
+
 /* LIST STYLE FOR POSTS */
 .page-layout-body-paragraph-text li {
 list-style: circle;
@@ -89,7 +118,8 @@ overflow: hidden;
 }
 
 /* HIDE SECOND AND THIRD LOCAL SPONSOR LOGO IN FOOTER SO ARTISAN DOESN'T SHOW 3X */
-.footer-local-sponsors .grid-item-inner ul li:nth-child(2) {
+/* COMMENTED OUT FOR THE 2016 YEAR WITH NEW SPONSORS */
+/*.footer-local-sponsors .grid-item-inner ul li:nth-child(2) {
 display:none;
 }
 
@@ -101,7 +131,7 @@ display:none;
 #ajax-hook-event-attendees {
 visibility: visible;
 }
-}
+}*/
 
 .layout {
 /*max-width: 1200p
