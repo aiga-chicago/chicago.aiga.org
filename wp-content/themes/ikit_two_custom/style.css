@@ -14,30 +14,20 @@ padding: 0px;
 
 /* HIDE TEXT LOGO IN HEADER - WAS ONLY ABLE TO BE DISPLAYED IN FRANKLIN AFTER LOGO REFRESH */
 .header-col1 {
-	display: none;
+display: none;
 }
 
-/* CUSTOM SPONSOR PAGE - FONT FORMATTING FOR 6 COLUMNS */
-.one_sixth {
-font-size: 12px;
-line-height: 18px;
-}
 
-.one_sixth strong {
-line-height: 22px;
+.postid-34624 .page-header-4-title-container, .postid-34624 .page-header-4-overlay {
+visibility: hidden;
 }
-
-.in-kind p {
-font-size: 12px;
-line-height: 18px;
-}
-
 
 /* EVENT PAGE TITLES - REMOVE GRADIENT AND TEXT */
 .single-ikit_event .page-header-4-overlay {
 visibility: hidden;
 }
 
+/* 2016-boost-grant-for-aiga-chicago-student-groups - REMOVE GRADIENT AND TEXT */
 .single-ikit_event .page-header-4-title-container {
 visibility: hidden;
 }
