@@ -17,6 +17,19 @@ padding: 0px;
 display: none;
 }
 
+/* CUSTOM SPONSOR PAGE - FONT FORMATTING FOR 6 COLUMNS */
+.one_sixth {
+font-size: 12px;
+line-height: 18px;
+}
+
+.one_sixth strong {
+line-height: 22px;
+}
+
+.in-kind p {
+font-size: 12px;
+line-height: 18px;
 
 .postid-34624 .page-header-4-title-container, .postid-34624 .page-header-4-overlay {
 visibility: hidden;
