@@ -38,23 +38,9 @@ $g_theme_options = get_option(IKIT_TWO_THEME_OPTION_GROUP_GENERAL);
 
 ?>
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
-<script>
-    // disable 300ms tap delay on mobile browsers
-    FastClick.attach(document.body);
-
-    // allow :active styles to work in your CSS on a page in Mobile Safari
-    document.addEventListener("touchstart", function(){}, true);
-
-    // black status bar on transparent background hack (http://blog.flinto.com/how-to-get-black-status-bars.html)
-    if (window.navigator.standalone) {
-      $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
-    }
-</script>
-
 <head>
 
-<?
+<?php
 
 $page_title = null;
 
@@ -111,7 +97,6 @@ if(is_singular(array('post', IKIT_POST_TYPE_IKIT_EVENT))) {
 // Otherwise sitewide meta
 else {
 
-
     ?>
     <title><?php echo $page_title; ?></title>
     <?php
@@ -126,14 +111,6 @@ else {
 
 <!-- iOS devices should not auto-scale the website, as resolutions are perfectly matched -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-
-<!-- Enables or disables automatic detection of possible phone numbers in a webpage in Safari on iOS. -->
-<meta name="format-detection" content="telephone=yes">
-
-<!-- status bar hack for black text on transparent status bar
-detail: http://blog.flinto.com/how-to-get-black-status-bars.html -->
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <!-- Add theme stylesheet -->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css"/>
@@ -143,10 +120,8 @@ detail: http://blog.flinto.com/how-to-get-black-status-bars.html -->
 
 <?php
 
-
-
-wp_deregister_script('jquery');
-wp_enqueue_script('js_jquery', get_bloginfo('template_url') . '/js/jquery-1.10.2.min.js');
+wp_enqueue_script('jquery');
+wp_enqueue_script('js_jquery_init', get_bloginfo('template_url') . '/js/jquery.init.js');
 wp_enqueue_script('js_jquery_ui', get_bloginfo('template_url') . '/js/jquery-ui-1.10.4.custom.min.js');
 wp_enqueue_script('js_jquery_flexslider', get_bloginfo('template_url') . '/js/jquery.flexslider-min.js');
 wp_enqueue_script('js_respond', get_bloginfo('template_url') . '/js/respond.min.js');
@@ -158,6 +133,7 @@ wp_enqueue_script('js_plugins', get_bloginfo('template_url') . '/js/plugins.js')
 wp_enqueue_script('js_ikit_two', get_bloginfo('template_url') . '/js/ikit_two.js');
 
 wp_enqueue_style('css_sass', get_bloginfo('template_url') . '/css/stylesheets/sass.css');
+wp_enqueue_style('css_sass_templates', get_bloginfo('template_url') . '/css/stylesheets/sass_templates.css');
 wp_enqueue_style('css_plugins', get_bloginfo('template_url') . '/css/plugins.css');
 wp_enqueue_style('css_editor', get_bloginfo('template_url') . '/css/editor.css');
 
@@ -171,7 +147,7 @@ wp_head();
 <?php } ?>
 
 
-<?php if(preg_match('/msie [4|5|6|7]/i',$_SERVER['HTTP_USER_AGENT'])) { ?>
+<?php if(preg_match('/msie [4|5|6|7|8]/i',$_SERVER['HTTP_USER_AGENT'])) { ?>
     <script type="text/javascript">
     $(document).ready(function() {
 
@@ -189,6 +165,24 @@ wp_head();
 <?php } ?>
 
 <!-- Custom font -->
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+<script>
+
+    // Font face fonts need to run the onLoaded function
+    WebFont.load({
+        custom: {
+            families: ['Tiempos'],
+            urls: ['<?php echo get_bloginfo('template_url') . '/style.css'; ?>']
+        },
+        active: function() {
+            jQuery.ikit_two.fonts.onLoaded();
+        },
+        inactive: function() {
+            jQuery.ikit_two.fonts.onLoaded();
+        }
+    });
+</script>
+
 <?php
 
 $custom_font_embed_code = $g_theme_options[IKIT_TWO_THEME_OPTION_CUSTOM_FONT_EMBED_CODE];
@@ -197,8 +191,19 @@ if(empty($custom_font_embed_code) == false) {
 }
 else {
     ?>
-    <script type="text/javascript" src="//use.typekit.net/eml4pgw.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <script type="text/javascript" src="//use.typekit.net/evv0pua.js"></script>
+    <script type="text/javascript">
+    try{
+
+        // Typekit Loaded fonts need to run the onloaded function
+        Typekit.load({
+            active: jQuery.ikit_two.fonts.onLoaded,
+            inactive: jQuery.ikit_two.fonts.onLoaded
+        });
+    }
+    catch(e) {}
+    </script>
     <?php
 }
 ?>
@@ -237,84 +242,93 @@ else {
     cat_plugin_breakpoint_body_widths="600,780,1280,1560">
 
 <div class="nav-menu">
+    <div class="nav-menu-inner">
 
-    <a class="nav-menu-close-button" href="javascript:void(0);"><img class="rollover-image" src="<?php bloginfo('template_url'); ?>/images/button_close@2x.png"/></a>
+    <div class="nav-search">
+        <div class="nav-search-inner">
+            <div class="nav-search-form">
+                <?php get_search_form(); ?>
+            </div>
+        </div>
+    </div>
 
-    <?php foreach($g_main_nav_menu_items as $main_nav_menu_item) { ?>
+    <div class="nav-menu-grid">
 
-        <div class="nav-menu-item">
+        <div class="cat-plugin-fluid-grid grid"
+            cat_plugin_fluid_grid_layout_mode="fitRows"
+            cat_plugin_fluid_grid_breakpoint_body_size_num_cols="5,3,2,1"
+            cat_plugin_fluid_grid_breakpoint_body_size_classes="<?php echo IKIT_TWO_FLUID_GRID_BREAKPOINT_BODY_SIZE_CLASSES; ?>"
+            cat_plugin_fluid_grid_breakpoint_body_class="<?php echo IKIT_TWO_FLUID_GRID_BREAKPOINT_BODY_CLASS; ?>"
+        >
 
-            <?php
-            $main_nav_menu_item_active = false;
-            if($main_nav_menu_item->post_name == 'home' && is_home()) { $main_nav_menu_item_active = true; }
-            if($main_nav_menu_item->object == 'page' && is_page($main_nav_menu_item->object_id)) { $main_nav_menu_item_active = true; }
-            ?>
+        <?php foreach($g_main_nav_menu_items as $main_nav_menu_item) { ?>
 
-            <a class="<?php if($main_nav_menu_item_active) { echo 'active'; } ?>" target="<?php echo $main_nav_menu_item->target; ?>" href="<?php echo $main_nav_menu_item->url; ?>"><?php echo $main_nav_menu_item->title; ?></a>
+            <div class="nav-menu-item cat-plugin-fluid-grid-item grid-item">
+                <div class="grid-item-inner">
+                <?php
+                $main_nav_menu_item_active = false;
+                if($main_nav_menu_item->post_name == 'home' && (is_home() || is_front_page())) { $main_nav_menu_item_active = true; }
+                if($main_nav_menu_item->object == 'page' && is_page($main_nav_menu_item->object_id)) { $main_nav_menu_item_active = true; }
+                ?>
 
-            <div class="nav-menu-submenu">
+                <div class="nav-menu-item-link"><a class="<?php if($main_nav_menu_item_active) { echo 'active'; } ?>" target="<?php echo $main_nav_menu_item->target; ?>" href="<?php echo $main_nav_menu_item->url; ?>"><?php echo $main_nav_menu_item->title; ?></a></div>
 
-                <?php $main_nav_menu_items_for_parent_id = $g_main_nav_menu_items_by_parent_id[$main_nav_menu_item->ID];
-                foreach($main_nav_menu_items_for_parent_id as $main_nav_menu_item_for_parent_id) { ?>
+                <div class="nav-menu-submenu">
 
-                    <?php
-                    $main_nav_menu_item_for_parent_id_active = false;
-                    if($main_nav_menu_item_for_parent_id->object == 'page' && is_page($main_nav_menu_item_for_parent_id->object_id)) { $main_nav_menu_item_for_parent_id_active = true; }
-                    ?>
+                    <?php $main_nav_menu_items_for_parent_id = $g_main_nav_menu_items_by_parent_id[$main_nav_menu_item->ID];
+                    foreach($main_nav_menu_items_for_parent_id as $main_nav_menu_item_for_parent_id) { ?>
 
-                    <?php if($main_nav_menu_item_for_parent_id->target != '_blank') { ?>
-                        <div class="nav-menu-submenu-item"><a class="<?php if($main_nav_menu_item_for_parent_id_active) { echo 'active'; } ?>" target="<?php echo $main_nav_menu_item_for_parent_id->target; ?>" href="<?php echo $main_nav_menu_item_for_parent_id->url; ?>"><?php echo $main_nav_menu_item_for_parent_id->title; ?></a></div>
+                        <?php
+                        $main_nav_menu_item_for_parent_id_active = false;
+                        if($main_nav_menu_item_for_parent_id->object == 'page' && is_page($main_nav_menu_item_for_parent_id->object_id)) { $main_nav_menu_item_for_parent_id_active = true; }
+                        ?>
+
+                        <div class="nav-menu-submenu-item <?php if($main_nav_menu_item_for_parent_id->target == '_blank') { ?>nav-menu-submenu-item-external<?php } ?>"><a class="nav-menu-submenu-item-link <?php if($main_nav_menu_item_for_parent_id_active) { echo 'active'; } ?>" target="<?php echo $main_nav_menu_item_for_parent_id->target; ?>" href="<?php echo $main_nav_menu_item_for_parent_id->url; ?>"><?php echo $main_nav_menu_item_for_parent_id->title; ?></a></div>
+
                     <?php } ?>
 
-                <?php } ?>
-
+                </div>
+                </div>
             </div>
 
-        </div>
+        <?php } ?>
 
-    <?php } ?>
+        </div>
+    </div>
+
+    </div>
 
 </div>
 
 <!-- Nav menu background is needed to appear behind the menu when the user is scrolling, otherwise the background will show through -->
 <div class="nav-menu-background"></div>
 
-<div class="nav-search">
-    <?php get_search_form(); ?>
-</div>
-
 <div class="layout">
 
 <div class="header">
 
-    <!-- UPDATE: flipped the order of col0 & col1, made table bgc black -->
-    <table style="background-color:#000">
+    <table>
     <tr>
     <td class="header-col0">
-        <a class="header-nav-menu-button" href="javascript:void(0);"><img class="rollover-image" src="<?php bloginfo('template_url'); ?>/images/button_menu@2x.png"></a>
-    </td>
-    <td class="header-col1">
         <?php $aiga_header_logo_image_url = $g_theme_options[IKIT_TWO_THEME_OPTION_AIGA_HEADER_LOGO_IMAGE]['url']; ?>
         <a class="header-logo" href="<?php echo get_home_url(); ?>"><img src="<?php if(empty($aiga_header_logo_image_url)) { echo bloginfo('template_url') . '/images/default_aiga_header_logo.png'; } else { echo $aiga_header_logo_image_url; } ?>" /> </a>
     </td>
-    <td class="header-col2" onclick="window.location.href = '<?php echo get_home_url(); ?>'">
+    <td class="header-col1" onclick="window.location.href = '<?php echo get_home_url(); ?>'">
 
         <?php if('blank' != get_header_textcolor()) { ?>
             <div style="color:#<?php echo get_header_textcolor(); ?>" class="header-text"><?php $blog_name = str_replace("AIGA ", "", get_bloginfo('name')); echo $blog_name; ?></div>
         <?php } else { echo '&nbsp;'; } ?>
 
     </td>
-    <td>
-        <div class="header-nav-search-button-container">
-            <a class="header-nav-search-button" href="javascript:void(0);"><img class="rollover-image" src="<?php bloginfo('template_url'); ?>/images/button_search@2x.png"/></a>
-        </div>
+    <td class="header-col2">
+        <a class="header-nav-menu-button" href="javascript:void(0);">Menu</a>
     </td>
     </tr>
     </table>
 
 </div>
 
-<?php if(is_home()) { ?>
+<?php if(is_home() || is_front_page()) { ?>
 
 <?php
 
@@ -326,7 +340,7 @@ if($image_gallery_featured->post_status == 'publish' && count($image_gallery) > 
 
 <div class="feature">
 
-    <div class="image-gallery flex-container" image_gallery_type="featured">
+    <div class="image-gallery flex-container hero-image" image_gallery_type="featured" image_gallery_autoplay="<?php if($g_theme_options[IKIT_TWO_THEME_OPTION_FEATURED_IMAGE_GALLERY_AUTOPLAY]) { echo "true"; } else { echo "false"; } ?>">
 
         <div class="flexslider">
         <ul class="slides">
@@ -348,12 +362,15 @@ if($image_gallery_featured->post_status == 'publish' && count($image_gallery) > 
         </ul>
         </div>
 
-        <div class="image-gallery-controls">
-            <div class="image-gallery-controls-button image-gallery-controls-prev-button"><img class="rollover-image" src="<?php bloginfo('template_url'); ?>/images/button_arrow_left@2x.png"/></div>
-            <div class="image-gallery-controls-button image-gallery-controls-next-button"><img class="rollover-image" src="<?php bloginfo('template_url'); ?>/images/button_arrow_right@2x.png"/></div>
-        </div>
+        <div class="image-gallery-controls-button image-gallery-controls-prev-button"><img class="rollover-image" src="<?php bloginfo('template_url'); ?>/images/button_arrow_left@2x.png"/></div>
+        <div class="image-gallery-controls-button image-gallery-controls-next-button"><img class="rollover-image" src="<?php bloginfo('template_url'); ?>/images/button_arrow_right@2x.png"/></div>
 
-        <div class="image-gallery-title"></div>
+
+        <div class="image-gallery-title-container">
+            <div class="image-gallery-title-container-inner">
+                <div class="image-gallery-title"></div>
+            </div>
+        </div>
 
     </div>
 
