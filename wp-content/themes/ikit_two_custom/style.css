@@ -8,8 +8,24 @@ Version: 1.0.0
 Template: ikit_two
 */
 
+
 .widget_text .widget-content {
 padding: 0px;
+}
+
+/* BUTTON STYLE – JUST ADD CLASS TO A HYPERLINK TAG */
+.btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #00afef;
+  padding: 10px 20px 10px 20px;
+  border: solid #00AEEF 1px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
 }
 
 /* HIDE TEXT LOGO IN HEADER - WAS ONLY ABLE TO BE DISPLAYED IN FRANKLIN AFTER LOGO REFRESH */
@@ -32,17 +48,13 @@ font-size: 12px;
 line-height: 18px;
 }
 
+/* 2016-boost-grant-for-aiga-chicago-student-groups - REMOVE GRADIENT AND TEXT */
 .postid-34624 .page-header-4-title-container, .postid-34624 .page-header-4-overlay {
 visibility: hidden;
 }
 
 /* EVENT PAGE TITLES - REMOVE GRADIENT AND TEXT */
-.single-ikit_event .page-header-4-overlay {
-visibility: hidden;
-}
-
-/* 2016-boost-grant-for-aiga-chicago-student-groups - REMOVE GRADIENT AND TEXT */
-.single-ikit_event .page-header-4-title-container {
+.single-ikit_event .page-header-4-overlay, .single-ikit_event .page-header-4-title-container {
 visibility: hidden;
 }
 
@@ -130,6 +142,3 @@ display:none;
 visibility: visible;
 }
 }*/
-
-.layout {
-/*max-width: 1200p
