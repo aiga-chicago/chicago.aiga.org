@@ -52,8 +52,16 @@ font-size: 12px;
 line-height: 18px;
 }
 
-/* 2016-boost-grant-for-aiga-chicago-student-groups - REMOVE GRADIENT AND TEXT */
+/* SELECT POST BANNERS - REMOVE GRADIENT AND TEXT */
 .postid-34624 .page-header-4-title-container, .postid-34624 .page-header-4-overlay {
+visibility: hidden;
+}
+
+.postid-35810 .page-header-4-title-container, .postid-35810 .page-header-4-overlay {
+visibility: hidden;
+}
+
+.postid-36337 .page-header-4-title-container, .postid-36337 .page-header-4-overlay {
 visibility: hidden;
 }
 
