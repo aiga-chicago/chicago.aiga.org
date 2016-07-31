@@ -8,9 +8,13 @@ Version: 1.0.0
 Template: ikit_two
 */
 
-
 .widget_text .widget-content {
 padding: 0px;
+}
+
+/* CHANGE NAV MENU LINKS TO WHITE FROM GREY */
+body .nav-menu-submenu-item-external a.nav-menu-submenu-item-link {
+color: white !important;
 }
 
 /* BUTTON STYLE – JUST ADD CLASS TO A HYPERLINK TAG */
@@ -62,6 +66,10 @@ visibility: hidden;
 }
 
 .postid-36337 .page-header-4-title-container, .postid-36337 .page-header-4-overlay {
+visibility: hidden;
+}
+
+.postid-38557 .page-header-4-title-container, .postid-38557 .page-header-4-overlay {
 visibility: hidden;
 }
 
