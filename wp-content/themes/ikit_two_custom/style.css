@@ -9,156 +9,156 @@ Template: ikit_two
 */
 
 .widget_text .widget-content {
-padding: 0px;
+  padding: 0px;
 }
 
 /* CHANGE NAV MENU LINKS TO WHITE FROM GREY */
 body .nav-menu-submenu-item-external a.nav-menu-submenu-item-link {
-color: white !important;
+  color: white !important;
 }
 
 /* BUTTON STYLE – JUST ADD CLASS TO A HYPERLINK TAG */
 .btn {
--webkit-border-radius: 5;
--moz-border-radius: 5;
-border-radius: 5px;
-padding: 10px 20px 10px 20px;
-border: solid #58c8dd 1px;
-text-decoration: none;
-font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 14px !important;
-text-transform: uppercase;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  border: solid #58c8dd 1px;
+  text-decoration: none;
+  font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px !important;
+  text-transform: uppercase;
 }
 
 .btn:hover {
-text-decoration: none;
+  text-decoration: none;
 }
 
 /* HIDE TEXT LOGO IN HEADER - WAS ONLY ABLE TO BE DISPLAYED IN FRANKLIN AFTER LOGO REFRESH */
 .header-col1 {
-display: none;
+  display: none;
 }
 
 /* CUSTOM SPONSOR PAGE - FONT FORMATTING FOR 6 COLUMNS */
 .one_sixth {
-font-size: 12px;
-line-height: 18px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .one_sixth strong {
-line-height: 22px;
+  line-height: 22px;
 }
 
 .in-kind p {
-font-size: 12px;
-line-height: 18px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 /* SELECT POST BANNERS - REMOVE GRADIENT AND TEXT */
 .postid-34624 .page-header-4-title-container, .postid-34624 .page-header-4-overlay {
-visibility: hidden;
+  visibility: hidden;
 }
 
 .postid-35810 .page-header-4-title-container, .postid-35810 .page-header-4-overlay {
-visibility: hidden;
+  visibility: hidden;
 }
 
 .postid-36337 .page-header-4-title-container, .postid-36337 .page-header-4-overlay {
-visibility: hidden;
+  visibility: hidden;
 }
 
 .postid-38557 .page-header-4-title-container, .postid-38557 .page-header-4-overlay {
-visibility: hidden;
+  visibility: hidden;
 }
 
 /* EVENT PAGE TITLES - REMOVE GRADIENT AND TEXT */
 .single-ikit_event .page-header-4-overlay, .single-ikit_event .page-header-4-title-container {
-visibility: hidden;
+  visibility: hidden;
 }
 
 /* META SLIDER STYLES */
 .metaslider {
-float: right;
-padding: 0 0 24px 36px;
+  float: right;
+  padding: 0 0 24px 36px;
 }
 
 .postid-36034 .metaslider {
-float: none;
-padding: 0;
+  float: none;
+  padding: 0;
 }
 
 .metaslider .caption {
-font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
-font-style: normal;
-font-weight: 500 !important;
-font-size: 14px;
-line-height: 20px;
+  font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .metaslider .caption i {
 font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
-font-style: italic;
-font-weight: 500 !important;
-font-size: 14px;
-line-height: 20px;
+  font-style: italic;
+  font-weight: 500 !important;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .breakpoint-body-size-s .metaslider {
-padding: 0;
+  padding: 0;
 }
 
 /* HEADING STYLES */
 h3 {
-font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
-font-style: normal;
-font-weight: 700 !important;
+  font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+  font-style: normal;
+  font-weight: 700 !important;
 }
 
 /* POST TEXT STYLING */
 .small-bold, h3 {
-font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
+  font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .big-bold {
-font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
+  font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
 }
 
 .big-bold-italic {
-font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
-font-style: italic;
-font-weight: 700;
-font-size: 32px;
+  font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 32px;
 }
 
 blockquote {
-font-size: 1.5em;
-line-height: 1.2em;
-border-left: 5px #00ccff solid;
-padding-left: 2em  !important;
-padding-right: 3em  !important;
-font-style: italic;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  border-left: 5px #00ccff solid;
+  padding-left: 2em  !important;
+  padding-right: 3em  !important;
+  font-style: italic;
 }
 
 /* LIST STYLE FOR POSTS */
-.page-layout-body-paragraph-text li {
-list-style: circle;
-margin-left: 1em;
-margin-bottom: 1em;
+  .page-layout-body-paragraph-text li {
+  list-style: circle;
+  margin-left: 1em;
+  margin-bottom: 1em;
 }
 
 /* IFRAME SIZE AND NO SCROLL BARS */
-iframe.noScrolling {
-width: 760px;
-height: 500px;
-overflow: hidden;
+  iframe.noScrolling {
+  width: 760px;
+  height: 500px;
+  overflow: hidden;
 }
 
 /* HIDE SECOND AND THIRD LOCAL SPONSOR LOGO IN FOOTER SO ARTISAN DOESN'T SHOW 3X */
