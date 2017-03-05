@@ -1,4 +1,4 @@
-/*
+
 Theme Name: iKit Two Custom
 Theme URI: http://aiga.org
 Description: This is a child theme that extends the iKit Two theme, it can be customized without affecting the base theme.
@@ -161,6 +161,14 @@ blockquote {
   overflow: hidden;
 }
 
+/* SPONSOR BLOCK */
+.sponsor-block {
+  border-color: #e6e7e8;
+  border-top: 1px;
+  border-bottom: 1px;
+  padding: 1em 0;
+}
+
 /* HIDE SECOND AND THIRD LOCAL SPONSOR LOGO IN FOOTER SO ARTISAN DOESN'T SHOW 3X */
 /* COMMENTED OUT FOR THE 2016 YEAR WITH NEW SPONSORS */
 /*.footer-local-sponsors .grid-item-inner ul li:nth-child(2) {
@@ -175,4 +183,4 @@ display:none;
 #ajax-hook-event-attendees {
 visibility: visible;
 }
-}*/
+}
